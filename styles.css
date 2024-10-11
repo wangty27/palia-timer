@@ -1,0 +1,93 @@
+body {
+  color: #dee2e6;
+  background-color: #212529
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+}
+
+.npc-list {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fill, 120px);
+  list-style-type: none;
+  text-decoration: none;
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.npc {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid #dee2e6;
+  width: 100%;
+}
+
+.npc-avatar {
+  margin-right: 20px;
+}
+
+.npc-name {
+  width: 100px;
+}
+
+.npc-gift {
+  margin-left: auto;
+  margin-right: 20px;
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.npc-gift.zeki {
+  margin-left: 20px;
+}
+
+.npc-gift.zeki-shop {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.npc-gift-shop {
+  margin-left: auto;
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.npc-gift:hover {
+  opacity: 0.6;
+}
+
+.npc-gift-complete {
+  background: #dee2e6;
+  color: #000000;
+}
+
+.cat-pic {
+  height: 100px;
+  border-radius: 10px;
+  margin-left: 50px;
+}
