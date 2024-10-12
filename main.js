@@ -117,7 +117,7 @@ const getNextDailyReset = (date) => {
 
 const getNextWeeklyReset = (date) => {
   const target = new Date(date);
-  target.setDate(target.getDate() + (7 - target.getDay()));
+  target.setDate(target.getDate() + (7 - target.getDay() + 1));
   
   const y = target.getUTCFullYear();
   const m = (target.getUTCMonth() + 1).toString().padStart(2, '0');
